@@ -1,0 +1,60 @@
+{
+  "n_examples": 1848,
+  "n_valid_model_predictions": 1848,
+  "invalid_output_rate": 0.0,
+  "primary_model_t2_accuracy": 0.7597402597402597,
+  "item_majority_baseline_t2_accuracy": 0.6206709956709957,
+  "global_majority_baseline_t2_accuracy": 0.5016233766233766,
+  "secondary_model_t1_accuracy": 0.7591991341991342,
+  "human_t1_t2_reliability": 0.8501082251082251,
+  "model_over_item_baseline_delta": 0.139069264069264,
+  "paired_pid_bootstrap_delta_95ci": [
+    0.11309523809523814,
+    0.1655844155844156
+  ],
+  "model_fraction_of_human_reliability": 0.8936982813494588,
+  "by_item": {
+    "Bottled Water | OZARKA Brand 100% Natural Spring Water, 16.9-ounce plastic bottles (Pack of 35)": {
+      "category": "Bottled Water",
+      "n": 308,
+      "model_t2_accuracy": 0.7954545454545454,
+      "baseline_t2_accuracy": 0.7077922077922078,
+      "human_t1_t2_accuracy": 0.8214285714285714
+    },
+    "Cereal - Ready to Eat | Cinnamon Toast Crunch Breakfast Cereal, Crispy Cinnamon Cereal, Family Size, 18.8 oz": {
+      "category": "Cereal - Ready to Eat",
+      "n": 308,
+      "model_t2_accuracy": 0.711038961038961,
+      "baseline_t2_accuracy": 0.487012987012987,
+      "human_t1_t2_accuracy": 0.827922077922078
+    },
+    "Fresh Eggs | Eggland's Best Classic Extra Large White Eggs, 12 count": {
+      "category": "Fresh Eggs",
+      "n": 308,
+      "model_t2_accuracy": 0.8084415584415584,
+      "baseline_t2_accuracy": 0.8084415584415584,
+      "human_t1_t2_accuracy": 0.8928571428571429
+    },
+    "Fresh Fruit | Fresh Raspberries, 12 oz Container": {
+      "category": "Fresh Fruit",
+      "n": 308,
+      "model_t2_accuracy": 0.7922077922077922,
+      "baseline_t2_accuracy": 0.5487012987012987,
+      "human_t1_t2_accuracy": 0.8506493506493507
+    },
+    "Pain Remedies - Headache | Tylenol Extra Strength Caplets with 500 mg Acetaminophen, 100 Ct": {
+      "category": "Pain Remedies - Headache",
+      "n": 308,
+      "model_t2_accuracy": 0.7272727272727273,
+      "baseline_t2_accuracy": 0.4935064935064935,
+      "human_t1_t2_accuracy": 0.827922077922078
+    },
+    "Soft Drinks - Carbonated | Coca-Cola Soda Pop, 12 fl oz, 12 Pack Cans": {
+      "category": "Soft Drinks - Carbonated",
+      "n": 308,
+      "model_t2_accuracy": 0.724025974025974,
+      "baseline_t2_accuracy": 0.6785714285714286,
+      "human_t1_t2_accuracy": 0.8798701298701299
+    }
+  }
+}

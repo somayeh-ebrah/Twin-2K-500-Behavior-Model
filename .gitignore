@@ -1,0 +1,51 @@
+# Byte-compiled
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Twin-2K-500 download (written by download_dataset.py)
+data/
+cache/
+
+# Hugging Face / local caches
+.cache/
+huggingface/
+
+# Training checkpoints and optimizer states (regenerable; large)
+poc/artifacts/**/checkpoint-*/
+*.pt
+*.pth
+*.bin
+
+# Jupyter
+.ipynb_checkpoints
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Experiment trackers / logs
+*.log
+wandb/
+runs/
+mlruns/
+
+# Test / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+*.swp

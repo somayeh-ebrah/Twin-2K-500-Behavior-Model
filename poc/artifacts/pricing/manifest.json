@@ -1,0 +1,20 @@
+{
+  "seed": 2026,
+  "categories": [
+    "Pain Remedies - Headache",
+    "Soft Drinks - Carbonated",
+    "Cereal - Ready to Eat",
+    "Bottled Water",
+    "Fresh Eggs",
+    "Fresh Fruit"
+  ],
+  "counts": {
+    "train": 8646,
+    "validation": 1854,
+    "test_inputs": 1848,
+    "test_labels": 1848
+  },
+  "persona_max_chars": 2800,
+  "persona_max_facts": 28,
+  "note": "train/validation labels are T1; test_inputs contains no labels; final primary label is T2"
+}

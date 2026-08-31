@@ -1,0 +1,7 @@
+# POC training extras. The full environment is the repo-root requirements.txt
+# (Conda env: asf-env). From the repo root: pip install -r requirements.txt
+torch>=2.7.1
+transformers>=5.5.0
+peft>=0.17
+accelerate>=1.10
+safetensors>=0.4

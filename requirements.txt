@@ -1,0 +1,25 @@
+# Packages imported by this repository, pinned to the asf-env Conda environment
+# (Python 3.11). Recreate with: conda env create -f environment.yml
+
+# download_dataset.py, src/, notebooks
+pandas==3.0.2
+numpy>=2.4.6
+scipy==1.17.1
+matplotlib==3.10.8
+tqdm==4.67.3
+datasets==4.8.4
+huggingface-hub==1.15.0
+
+# notebooks/01_data_exploration.ipynb, notebooks/02_poc_demo_test_sample.ipynb
+jupyter==1.1.1
+notebook==7.5.5
+ipython==9.10.1
+
+# poc/train_qwen_lora.py, poc/predict_qwen_lora.py
+# asf-env used torch==2.7.1+cu128; the CUDA wheel tag is omitted so pip can
+# resolve a CPU build. For CUDA 12.8: pip install torch==2.7.1 --index-url https://download.pytorch.org/whl/cu128
+torch>=2.7.1
+transformers==5.5.0
+peft==0.20.0
+accelerate==1.13.0
+safetensors==0.7.0

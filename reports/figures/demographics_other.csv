@@ -1,0 +1,52 @@
+variable,value,count,percent
+region,"South (TX, OK, AR, LA, KY, TN, MS, AL, WV, DC, MD, DE, VA, NC, SC, GA, FL)",834,40.5
+region,"West (WA, OR, ID, MT, WY, CA, NV, UT, CO, AZ, NM)",494,24.0
+region,"Midwest (ND, SD, NE, KS, MN, IA, MO, WI, IL, MI, IN, OH)",372,18.1
+region,"Northeast (PA, NY, NJ, RI, CT, MA, VT, NH, ME)",342,16.6
+region,"Pacific (HI, AK)",16,0.8
+education,College graduate/some postgrad,735,35.7
+education,"Some college, no degree",468,22.7
+education,Postgraduate,313,15.2
+education,High school graduate,272,13.2
+education,Associate's degree,253,12.3
+education,Less than high school,17,0.8
+income,"$100,000 or more",552,26.8
+income,"$30,000-$50,000",412,20.0
+income,"$50,000-$75,000",411,20.0
+income,"Less than $30,000",367,17.8
+income,"$75,000-$100,000",316,15.4
+employment,Full-time employment,871,42.3
+employment,Self-employed,280,13.6
+employment,Part-time employment,269,13.1
+employment,Unemployed,249,12.1
+employment,Retired,245,11.9
+employment,Student,78,3.8
+employment,Home-maker,66,3.2
+political_party,Democrat,847,41.2
+political_party,Independent,609,29.6
+political_party,Republican,540,26.2
+political_party,Something else,62,3.0
+political_ideology,Moderate,582,28.3
+political_ideology,Liberal,564,27.4
+political_ideology,Conservative,430,20.9
+political_ideology,Very liberal,345,16.8
+political_ideology,Very conservative,137,6.7
+marital_status,Married,813,39.5
+marital_status,Never been married,714,34.7
+marital_status,Divorced,218,10.6
+marital_status,Living with a partner,212,10.3
+marital_status,Widowed,70,3.4
+marital_status,Separated,31,1.5
+household_size,2,650,31.6
+household_size,3,423,20.6
+household_size,1,412,20.0
+household_size,4,352,17.1
+household_size,More than 4,221,10.7
+us_citizen,Yes,2054,99.8
+us_citizen,No,4,0.2
+religious_attendance,Never,838,40.7
+religious_attendance,Seldom,463,22.5
+religious_attendance,Once a week,295,14.3
+religious_attendance,A few times a year,246,12.0
+religious_attendance,Once or twice a month,129,6.3
+religious_attendance,More than once a week,87,4.2

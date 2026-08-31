@@ -1,0 +1,24 @@
+{
+  "fit_on": "training T1 labels only",
+  "global_majority": 2,
+  "per_item_majority": {
+    "Bottled Water | OZARKA Brand 100% Natural Spring Water, 16.9-ounce plastic bottles (Pack of 35)": 2,
+    "Cereal - Ready to Eat | Cinnamon Toast Crunch Breakfast Cereal, Crispy Cinnamon Cereal, Family Size, 18.8 oz": 2,
+    "Fresh Eggs | Eggland's Best Classic Extra Large White Eggs, 12 count": 1,
+    "Fresh Fruit | Fresh Raspberries, 12 oz Container": 1,
+    "Pain Remedies - Headache | Tylenol Extra Strength Caplets with 500 mg Acetaminophen, 100 Ct": 2,
+    "Soft Drinks - Carbonated | Coca-Cola Soda Pop, 12 fl oz, 12 Pack Cans": 2
+  },
+  "train_label_counts": {
+    "2": 4481,
+    "1": 4165
+  },
+  "categories": [
+    "Pain Remedies - Headache",
+    "Soft Drinks - Carbonated",
+    "Cereal - Ready to Eat",
+    "Bottled Water",
+    "Fresh Eggs",
+    "Fresh Fruit"
+  ]
+}
