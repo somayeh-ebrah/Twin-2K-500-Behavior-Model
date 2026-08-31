@@ -87,7 +87,8 @@ Dataset: [LLM-Digital-Twin/Twin-2K-500](https://huggingface.co/datasets/LLM-Digi
 
 The trained LoRA adapter used for the reported POC results is available here:
 
-[Google Drive — Qwen2.5-0.5B LoRA adapter]([YOUR_LINK](https://drive.google.com/file/d/1tY1yYzI66frrhe7Ks9gWj-9WFDPNC_gx/view?usp=sharing))
+[Google Drive — Qwen2.5-0.5B LoRA adapter](https://drive.google.com/file/d/1tY1yYzI66frrhe7Ks9gWj-9WFDPNC_gx/view?usp=sharing
+)
 
 Base model: `Qwen/Qwen2.5-0.5B-Instruct`
 
