@@ -40,7 +40,7 @@ The recommended main experiment is therefore:
 
 For person $i$, define the safe persona as
 
-$$P_i = \left \{ (q_j, a_{i,j}, m_j):j\in \text{non-holdout Waves 1--3} \right\},$$
+$$P_i = \left\{(q_j, a_{i,j}, m_j):j\in \text{non-holdout Waves 1--3} \right\},$$
 
 where $q_j$ is the historical question, $a_{i,j}$ is that participant's answer, and $m_j$ contains question type, scale, matrix row, and other metadata.
 
