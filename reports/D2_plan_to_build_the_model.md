@@ -40,22 +40,13 @@ The recommended main experiment is therefore:
 
 For person $i$, define the safe persona as
 
-$$
-P_i =
-\left\{
-(q_j, a_{i,j}, m_j):
-j\in \text{non-holdout Waves 1--3}
-\right\},
-$$
+$$P_i = \left\{ (q_j, a_{i,j}, m_j):j\in \text{non-holdout Waves 1--3} \right\},$$
 
 where $q_j$ is the historical question, $a_{i,j}$ is that participant's answer, and $m_j$ contains question type, scale, matrix row, and other metadata.
 
 For an evaluation item $q$,
 
-$$
-X_{i,q} =
-(P_i,\ Q_q,\ C_{i,q},\ S_q),
-$$
+$$X_{i,q} = (P_i,\ Q_q,\ C_{i,q},\ S_q),$$
 
 where:
 
@@ -66,14 +57,7 @@ where:
 
 The model should ideally return both a hard answer and, where possible, a probability distribution:
 
-$$
-f_\theta(X_{i,q})
-=
-\left(
-\hat y_{i,q},
-p_\theta(y\mid X_{i,q})
-\right).
-$$
+$$ f_\theta(X_{i,q})= \left(\hat y_{i,q}, p_\theta(y\mid X_{i,q})\right).$$
 
 The hard answer is used for the paper-style predictive score. Probabilities are useful for calibration, uncertainty analysis, and population-level stochastic simulation.
 
@@ -85,15 +69,7 @@ This assignment, however, frames the practical task as predicting how the same p
 
 **Primary: future-behavior endpoint**
 
-$$
-M_{\text{future}}
-=
-\operatorname{Score}
-\left(
-\hat y^{T2}_{\text{test}},
-y^{T2}_{\text{test}}
-\right).
-$$
+$$ M_{\text{future}} = \text{Score} \left(\hat y^{T2}_{\text{test}}, y^{T2}_{\text{test}} \right).$$
 
 The model may learn from T1 labels belonging to **training participants**, but it must not receive T1 labels from validation/test participants as persona inputs.
 
@@ -104,7 +80,7 @@ After the model, prompt, hyperparameters, calibrators, and all predictions are f
 $$
 M_{\text{paper}}
 =
-\operatorname{Score}
+\text{Score}
 \left(
 \hat y_{\text{test}},
 y^{T1}_{\text{test}}
@@ -120,7 +96,7 @@ For the same held-out test PIDs:
 $$
 H_{\text{test}}
 =
-\operatorname{Score}
+\text{Score}
 \left(
 y^{T1}_{\text{test}},
 y^{T2}_{\text{test}}
@@ -129,19 +105,11 @@ $$
 
 Then report:
 
-$$
-R_{\text{ceiling}}
-=
-\frac{M_{\text{future}}}{H_{\text{test}}}
-$$
+$$R_{\text{ceiling}} = \frac{M_{\text{future}}}{H_{\text{test}}}$$
 
 and
 
-$$
-G_{\text{ceiling}}
-=
-H_{\text{test}}-M_{\text{future}}.
-$$
+$$G_{\text{ceiling}} = H_{\text{test}}-M_{\text{future}}.$$
 
 Call $H$ a **human reliability benchmark** or **practical ceiling**, not a strict mathematical upper bound. A model could theoretically exceed it if T2 contains random temporal noise.
 
@@ -151,25 +119,11 @@ The evaluator should be one frozen package shared by **every** baseline and mode
 
 For binary responses:
 
-$$
-A_{i,q}
-=
-\mathbb{1}
-[\hat y_{i,q}=y_{i,q}].
-$$
+$$A_{i,q} = \mathbb{1}[\hat y_{i,q}=y_{i,q}].$$
 
 For bounded ordinal/numeric responses:
 
-$$
-A_{i,q}
-=
-1-
-\frac{
-|\hat y_{i,q}-y_{i,q}|
-}{
-U_q-L_q
-}.
-$$
+$$A_{i,q} = 1- \frac{ |\hat y_{i,q}-y_{i,q}| }{ U_q-L_q }.$$
 
 Clip numerically to $[0,1]$ after validation.
 
@@ -177,25 +131,11 @@ For anchoring estimates, which are unbounded, first map raw estimates to deciles
 
 For an evaluation task $t$ containing multiple questions,
 
-$$
-A_{i,t}
-=
-\frac{1}{|Q_{i,t}|}
-\sum_{q\in Q_{i,t}}
-A_{i,q}.
-$$
+$$A_{i,t} = \frac{1}{|Q_{i,t}|} \sum_{q\in Q_{i,t}} A_{i,q}.$$
 
 The primary macro score should be
 
-$$
-A_{\text{macro}}
-=
-\frac1{17}
-\sum_{t=1}^{17}
-\frac1{|I_t|}
-\sum_{i\in I_t}
-A_{i,t}.
-$$
+$$A_{\text{macro}} = \frac1{17} \sum_{t=1}^{17} \frac1{|I_t|} \sum_{i\in I_t} A_{i,t}.$$
 
 This **equal task weighting** is important because pricing contains 40 items whereas some behavioral tasks contain only one. Weighting every raw item equally would allow the pricing task to dominate the headline result. The paper uses one accuracy measure per respondent per task and averages across the 17 tasks. 
 
