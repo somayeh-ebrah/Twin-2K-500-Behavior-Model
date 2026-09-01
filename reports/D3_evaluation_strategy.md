@@ -65,12 +65,7 @@ $$
 The overall score is:
 
 $$
-A_{\text{macro}}
-=
-\frac{1}{17}
-\sum_{t=1}^{17}
-\frac{1}{|I_t|}
-\sum_{i\in I_t} A_{i,t}
+A_{\text{macro}} = \frac{1}{17} \sum_{t=1}^{17} \frac{1}{|I_t|} \sum_{i\in I_t} A_{i,t}
 $$
 
 Equal task weighting matters because pricing contains many more raw items than some behavioral tasks. A raw item-level mean would allow large tasks to dominate the headline result.
