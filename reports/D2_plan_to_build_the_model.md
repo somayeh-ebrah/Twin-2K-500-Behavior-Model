@@ -77,15 +77,7 @@ The model may learn from T1 labels belonging to **training participants**, but i
 
 After the model, prompt, hyperparameters, calibrators, and all predictions are frozen:
 
-$$
-M_{\text{paper}}
-=
-\text{Score}
-\left(
-\hat y_{\text{test}},
-y^{T1}_{\text{test}}
-\right).
-$$
+$$M_{\text{paper}} = \text{Score} \left(\hat y_{\text{test}}, y^{T1}_{\text{test}} \right).$$
 
 This provides a bridge to the published 71.72% GPT-4.1-mini result. 
 
@@ -93,15 +85,7 @@ This provides a bridge to the published 71.72% GPT-4.1-mini result.
 
 For the same held-out test PIDs:
 
-$$
-H_{\text{test}}
-=
-\text{Score}
-\left(
-y^{T1}_{\text{test}},
-y^{T2}_{\text{test}}
-\right).
-$$
+$$H_{\text{test}} = \text{Score} \left(y^{T1}_{\text{test}}, y^{T2}_{\text{test}} \right).$$
 
 Then report:
 
