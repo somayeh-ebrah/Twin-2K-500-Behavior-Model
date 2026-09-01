@@ -18,7 +18,7 @@ The model predicts $\hat y_{i,q}$. For the primary benchmark, predictions are sc
 The same test participants also have their original response $T1$, allowing a human test–retest benchmark:
 
 
-$$H_{\text{test}}=\operatorname{Score}(T1_{\text{test}},T2_{\text{test}})$$
+$$H_{\text{test}}=\text{Score}(T1_{\text{test}},T2_{\text{test}})$$
 
 
 Deliverable 1 reproduced the full-sample human test–retest score at approximately **81.73%**, but the final benchmark should recompute this number on the frozen test split only.
