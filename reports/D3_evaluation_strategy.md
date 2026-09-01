@@ -101,19 +101,11 @@ The **condition-specific population baseline** is the most important trivial bas
 
 For the final test split, report:
 
-$$
-R_{\text{human}}
-=
-\frac{A_{\text{model}}}{H_{\text{test}}}
-$$
+$$ R_{\text{human}} = \frac{A_{\text{model}}}{H_{\text{test}}}$$
 
 and:
 
-$$
-G_{\text{human}}
-=
-H_{\text{test}}-A_{\text{model}}
-$$
+$$G_{\text{human}} = H_{\text{test}}-A_{\text{model}}$$
 
 These give the fraction of human test–retest reliability captured by the model and the remaining gap.
 
